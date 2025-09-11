@@ -3,6 +3,10 @@ fn main() {
     println!("Spell a number: {number}");
 
     // TODO: Fix the compiler error by changing the line below without renaming the variable.
-    number = 3;
+    // ERTI called variable shadowing (eher selten)
+    // Unterschied zu "mut"
+    //  - Der Typ darf ändern (bei mut nicht)
+    //  - Lifetime Nur einer can eine mut-variable verwenden
+    let number = 3;
     println!("Number plus two is: {}", number + 2);
 }
