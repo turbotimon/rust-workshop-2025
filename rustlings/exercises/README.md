@@ -2,6 +2,12 @@
 
 start with: ~/.cargo/bin/rustlings
 
+## Learnings
+
+- `mut` is _before_ the var, `&` ist _after_ the var before the Type:
+  - `get_char(data: &String)`
+
+
 # Exercise to Book Chapter mapping
 
 | Exercise               | Book Chapter        |
