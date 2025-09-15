@@ -50,15 +50,17 @@ pkgs.callPackage (
     mkShell,
     cargo,
     rustc,
+    clippy,
   }:
   mkShell {
-    extraCmds = ''
+    shellHook = ''
       export PATH=$PATH:~/.cargo/bin/
     '';
     strictDeps = true;
     nativeBuildInputs = [
       cargo
       rustc
+      clippy
     ];
   }
 ) { }
