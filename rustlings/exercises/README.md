@@ -1,3 +1,7 @@
+# ERTI
+
+start with: ~/.cargo/bin/rustlings
+
 # Exercise to Book Chapter mapping
 
 | Exercise               | Book Chapter        |
