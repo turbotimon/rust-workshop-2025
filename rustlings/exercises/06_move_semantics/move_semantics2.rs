@@ -1,9 +1,8 @@
-fn fill_vec(vec: &Vec<i32>) -> Vec<i32> {
-    // ERTI The idea (see solution) was to clone it before handing it to fill_vec
-    let mut vec = vec.clone();
+fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+    let mut vec = vec;
 
     vec.push(88);
- 
+
     vec
 }
 
@@ -21,7 +20,7 @@ mod tests {
     fn move_semantics2() {
         let vec0 = vec![22, 44, 66];
 
-        let vec1 = fill_vec(&vec0);
+        let vec1 = fill_vec(vec0);
 
         assert_eq!(vec0, [22, 44, 66]);
         assert_eq!(vec1, [22, 44, 66, 88]);
